@@ -1,4 +1,5 @@
 language: objective-c
+osx_image: xcode7.3
 before_install:
   - brew update
 install:
@@ -6,5 +7,5 @@ install:
 script:
   - echo localhost > inventory
   - ansible-playbook --syntax-check -i inventory test.yml
-  - ansible-playbook -i inventory test.yml --connection=local
+  - travis_wait 35 ansible-playbook -i inventory test.yml --connection=local
   - brew list
