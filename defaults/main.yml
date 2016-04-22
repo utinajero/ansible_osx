@@ -19,4 +19,3 @@ base_osx:
       - python
       - python3
       - packer
-      - apple-gcc42

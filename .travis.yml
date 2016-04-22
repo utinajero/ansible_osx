@@ -7,5 +7,5 @@ install:
 script:
   - echo localhost > inventory
   - ansible-playbook --syntax-check -i inventory test.yml
-  - travis_wait 35 ansible-playbook -i inventory test.yml --connection=local
+  - travis_wait ansible-playbook -i inventory test.yml --connection=local
   - brew list
