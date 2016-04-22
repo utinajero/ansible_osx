@@ -1,0 +1,22 @@
+# osx/roles/common/defaults/main.yml
+---
+base_osx:
+  # common --------------------------------
+  common:
+    # taps ----------------------------------
+    taps:
+      - homebrew/binary
+
+    # packages --------------------------------
+    packages:
+      - rbenv
+      - ruby-build
+      - ansible
+      - openssl
+      - pkg-config
+      - libyaml
+      - autoconf
+      - python
+      - python3
+      - packer
+      - apple-gcc42
